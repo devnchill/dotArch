@@ -77,7 +77,7 @@ rm -rf ~/.local/state/nvim
 ---
 
 ## 🧩 Switching Branches  
-If you want to try out my old config from the `scratch` branch, follow these steps:
+If you want to try out my old config from the `nvim/scratch` branch, follow these steps:
 
 1. **Navigate to your Neovim config folder**:  
 ```bash  
@@ -86,7 +86,7 @@ cd ~/.config/nvim
 
 2. **Switch to the `scratch` branch**:  
 ```bash  
-git checkout scratch  
+git checkout nvim/scratch  
 ```
 
 3. **Launch Neovim**:  
