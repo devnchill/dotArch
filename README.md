@@ -62,13 +62,8 @@ Here's an overview of the plugins I use to enhance my Neovim experience:
 ## 🖼️ Preview  
 Here’s a quick preview of my setup:  
 
-| Configurations         | Screenshot                                    |
-|------------------------|-----------------------------------------------|
-| **Hyprland Setup**      | ![Hyprland](assets/hyprland.png)             |
-| **Waybar**              | ![Waybar](assets/waybar.png)                 |
-| **Kitty Terminal**      | ![Kitty Terminal](assets/kitty.png)          |
-| **Neovim Setup**        | ![Neovim](assets/neovim.png)                 |
-
----
+<img src="./assets/img1.png">
+<img src="./assets/img2.png">
+<img src="./assets/img3.png">
 
 Feel free to customize this further to match your preferences!
