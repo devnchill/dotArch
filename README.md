@@ -27,25 +27,122 @@ I use **Hyprland** as my window compositor on Arch Linux. Yes, I use *Arch, btw*
 ---  
 
 ## 📦 Neovim Setup  
-Here's an overview of the plugins I use to enhance my Neovim experience:  
+## 🔧 Installation
 
-| Plugin               | Description                                  | Link |
-|----------------------|----------------------------------------------|------|
-| [`jaq-nvim`](https://github.com/axkirillov/jaq-nvim) | Run programs inside a floating buffer        | [GitHub](https://github.com/axkirillov/jaq-nvim) |
-| [`mason`](https://github.com/williamboman/mason.nvim) | Manage LSP servers, DAPs, linters, and formatters | [GitHub](https://github.com/williamboman/mason.nvim) |
-| [`nvim-dap`](https://github.com/mfussenegger/nvim-dap) | Debugging for C/C++ and JavaScript programs  | [GitHub](https://github.com/mfussenegger/nvim-dap) |
-| [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) | Easy setup for various LSP servers           | [GitHub](https://github.com/neovim/nvim-lspconfig) |
-| [`efm-langserver`](https://github.com/mattn/efm-langserver) | Formatter and linter that attaches to files  | [GitHub](https://github.com/mattn/efm-langserver) |
-| [`which-key`](https://github.com/folke/which-key.nvim) | Displays available keybindings               | [GitHub](https://github.com/folke/which-key.nvim) |
-| [`tokyonight`](https://github.com/folke/tokyonight.nvim) | Customized dark bluish colorscheme           | [GitHub](https://github.com/folke/tokyonight.nvim) |
-| [`cord.nvim`](https://github.com/ayamir/cord.nvim) | Discord presence integration                | [GitHub](https://github.com/ayamir/cord.nvim) |
-| [`friendly-snippets`](https://github.com/rafamadriz/friendly-snippets), [`emmet-vim`](https://github.com/mattn/emmet-vim), [`cmp-*`](https://github.com/hrsh7th/nvim-cmp), [`codeium`](https://github.com/Exafunction/codeium.nvim), [`ts-autotag`](https://github.com/windwp/nvim-ts-autotag) | Tools for snippets and autocompletions (Note: Codeium is not enabled by default as I'm still learning it) | |
-| [`nvim-tree`](https://github.com/nvim-tree/nvim-tree.lua), [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | File tree and syntax highlighting | |
-| [`telescope`](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finding files and grepping words       | [GitHub](https://github.com/nvim-telescope/telescope.nvim) |
-| [`harpoon`](https://github.com/ThePrimeagen/harpoon) | Quick navigation across files                | [GitHub](https://github.com/ThePrimeagen/harpoon) |
-| [`lualine`](https://github.com/nvim-lualine/lualine.nvim) | Status line that displays mode, buffers, git branch, macros, etc. | [GitHub](https://github.com/nvim-lualine/lualine.nvim) |
-| [`tmux-navigator`](https://github.com/christoomey/vim-tmux-navigator) | Consistent navigation between Tmux and Neovim | [GitHub](https://github.com/christoomey/vim-tmux-navigator) |
+Follow the steps below to try out my **LazyVim**-based Neovim setup from the `main` branch.
 
+### 📜 Prerequisites  
+Ensure you have:  
+- **Neovim 0.9+** installed.  
+- A backup of your current Neovim configuration (just in case).
+
+### 🚀 Steps to Install  
+1. **Clone the repository**:  
+```bash  
+git clone -b main git@github.com:devnchill/Neovim ~/.config/nvim  
+```
+
+2. **Launch Neovim**:  
+```bash  
+nvim  
+```
+
+3. **LazyVim will handle the rest** by automatically installing plugins on the first run.
+
+---
+
+## 🗑️ Removing the Configuration  
+To completely remove my configuration, run the following commands:
+
+1. **Delete the Neovim config folder**:  
+```bash  
+rm -rf ~/.config/nvim  
+```
+
+2. **Delete the Neovim data folder**:  
+```bash  
+rm -rf ~/.local/share/nvim  
+```
+
+3. **Delete the Neovim cache folder**:  
+```bash  
+rm -rf ~/.cache/nvim  
+```
+
+4. **Remove the Neovim state folder**:  
+```bash  
+rm -rf ~/.local/state/nvim  
+```
+
+---
+
+## 🧩 Switching Branches  
+If you want to try out my old config from the `scratch` branch, follow these steps:
+
+1. **Navigate to your Neovim config folder**:  
+```bash  
+cd ~/.config/nvim  
+```
+
+2. **Switch to the `scratch` branch**:  
+```bash  
+git checkout scratch  
+```
+
+3. **Launch Neovim**:  
+```bash  
+nvim  
+```
+
+---
+
+## 📸 Preview  
+Here’s a sneak peek of my **Neovim** setup:
+
+<img src="./assets/preview.png">
+---
+
+## 📦 Folder Structure  
+```plaintext  
+# Neovim Configuration Structure
+~/.config/nvim  
+├── init.lua  
+├── lazy-lock.json  
+├── lazyvim.json  
+├── LICENSE  
+├── lua  
+│   └── config  
+│       ├── autocmds.lua  
+│       ├── keymaps.lua  
+│       ├── lazy.lua  
+│       ├── options.lua  
+│       └── terminal.lua  
+├── lua  
+│   └── plugins  
+│       ├── colorscheme.lua  
+│       ├── example.lua  
+│       ├── jaq.lua  
+│       └── tmux-navigator.lua  
+└── stylua.toml  
+```
+
+---
+
+## ⚡ Plugins  
+The `main` branch is built using **LazyVim**, which includes the following custom files under `lua/config`:  
+- **`autocmds.lua`**  
+- **`keymaps.lua`**  
+- **`lazy.lua`**  
+- **`options.lua`**  
+- **`terminal.lua`**  
+
+Feel free to explore and modify them!
+
+---
+
+## 🧑‍💻 Author  
+**MONK** ([@DevNChill](https://github.com/devnchill))  
+Happy coding! 🚀  
 ---  
 
 ## 💻 Hyprland Tools  
