@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="jispowocustomized"
+ZSH_THEME="customjisp"
 
 plugins=(
     git
@@ -11,10 +11,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-alias ls='eza  --icons'
-alias l='eza -a --icons'
-alias ll='eza -al --icons'
-alias lt='eza -a --tree --level=1 --icons'
 alias sup='sudo pacman -Syu'
 alias yup='yay -Syu'
 alias s='sudo pacman -S'
@@ -27,8 +23,8 @@ alias cc='clear'
 alias ..='cd ..'
 alias ../..='cd ../..'
 
-. /opt/asdf-vm/asdf.sh
-export PATH="$PATH:$HOME/.local/bin:$HOME/.config/.npm-global/bin:$HOME/.spicetify"
+. "$HOME/.asdf/asdf.sh"
+export PATH="$PATH:$HOME/.local/bin"
 source <(fzf --zsh)
 bindkey -v
 
