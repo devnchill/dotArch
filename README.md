@@ -77,11 +77,21 @@ rm -rf ~/.local/state/nvim
 ---
 
 ## 🧩 Switching Branches  
+I have 3 branches at the moment and might change with time . README might not be upto date so checkout the branches directory from github repo.
+Stow branch is where I'm managing my dotfiles with GNU Stow , a dtofiles manager which creates symilnks for my dotfiles .
+
+To try out configs from different branches . You have to run this command .
+```bash
+#First navigate inside the repo
+cd dotArch 
+#switch branch
+git checkout <branchname>
+```
 If you want to try out my old config from the `nvim/scratch` branch, follow these steps:
 
 1. **Navigate to your Neovim config folder**:  
 ```bash  
-cd ~/.config/nvim  
+cd dotArch
 ```
 
 2. **Switch to the `scratch` branch**:  
