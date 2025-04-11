@@ -1,0 +1,160 @@
+/* GitHub Theme Colors */
+@define-color bg_dim      #0d1117; /* Dark background (GitHub Dark) */
+@define-color black       #161b22; /* Panel background */
+@define-color white       #c9d1d9; /* Light Text */
+@define-color bg0         #0d1117; /* Main background */
+@define-color bg1         #161b22; /* Slightly lighter background */
+@define-color bg2         #21262d; /* Panel border color */
+@define-color bg3         #30363d; /* Element background hover */
+@define-color bg4         #8b949e; /* Muted text color */
+@define-color fg          #c9d1d9; /* Primary text color */
+@define-color red         #f85149; /* Alert/Error */
+@define-color orange      #d29922; /* Warnings */
+@define-color yellow      #e3b341; /* Highlights */
+@define-color green       #2ea043; /* Success */
+@define-color aqua        #39c5cf; /* Info */
+@define-color blue        #58a6ff; /* Links/Primary buttons */
+@define-color purple      #8250df; /* Secondary actions */
+@define-color grey0       #484f58; /* Muted backgrounds */
+@define-color grey1       #6e7681; /* Borders */
+@define-color grey2       #8b949e; /* Muted text */
+
+/* Retain animations and styling logic */
+@keyframes blink {
+  to {
+    background-color: @fg;
+    color: @bg_dim;
+  }
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 97%;
+  min-height: 0;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  border: 1px solid transparent;
+  border-radius: 0px;
+  margin: 0px 1px;
+  padding: 0;
+}
+
+/* Windows and Panels */
+#window {
+  padding: 0px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  background-color: @bg0;
+}
+
+window#waybar {
+  border: none;
+  background-color: @bg0;
+  color: @fg;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.5;
+}
+
+window#waybar.empty,
+window#waybar.empty #window {
+  background: none;
+}
+
+/* Workspace and Taskbar */
+#taskbar button:hover,
+#workspaces button:hover {
+  background-color: @purple;
+  color: @white;
+}
+
+#workspaces button {
+  padding: 0 15px;
+  background-color: @blue;
+  color: @black;
+}
+
+#workspaces button.active,
+#taskbar button.active {
+  background-color: @yellow;
+  color: @black;
+}
+
+#workspaces button.focused {
+  background-color: @green;
+  color: @bg0;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+  color: @white;
+  border: 2px solid @red;
+  box-shadow: 0 0 10px @red;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+}
+
+/* Additional Components */
+#cpu,
+#memory {
+  padding: 0 5px 0 5px;
+  background-color: @orange;
+  color: @black;
+}
+
+#disk {
+  background-color: @green;
+  padding: 0 5px 0 5px;
+  color: @black;
+}
+
+#temperature {
+  padding: 0 5px 0 5px;
+  background-color: @green;
+  color: @black;
+}
+
+#battery {
+  background-color: @aqua;
+  color: @black;
+}
+
+#battery.plugged {
+  color: @fg;
+  background-color: @green;
+}
+
+#battery.charging {
+  color: @black;
+  background-color: @green;
+}
+
+#battery.critical:not(.charging) {
+  background-color: @red;
+  color: @fg;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+#clock {
+  padding: 0 5px 0 5px;
+  background-color: @purple;
+  color: @bg1;
+}
+
+/* Network and Audio */
+#network,
+#pulseaudio {
+  padding: 0 5px 0 5px;
+  background-color: @blue;
+  color: @black;
+}
+
+#pulseaudio.muted {
+  background-color: @grey1;
+  color: @black;
+}
