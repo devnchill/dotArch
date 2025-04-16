@@ -13,7 +13,7 @@ return {
         javascript = "node %",
         typescript = "tsx %",
         go = "go run %",
-        cpp = "g++ % -o $fileBase.out -std=c++23 && ./$fileBase.out",
+        cpp = "g++ -g % -o $fileBase.out -std=c++23 && ./$fileBase.out",
         c = "gcc -Wall -Wextra -pedantic -g % -o $fileBase.out && ./$fileBase.out",
         java = "javac % && java %",
       },

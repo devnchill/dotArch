@@ -3,9 +3,6 @@ return {
     "catppuccin/nvim",
     priority = "1000",
     opts = {
-      no_italics = false,
-      no_bold = false,
-      no_underline = false,
       color_overrides = {
         mocha = {
           base = "#000000",
@@ -22,20 +19,7 @@ return {
           }
         end,
       },
-      styles = {
-        comments = { "italic" },
-        conditionals = { "italic" },
-        loops = { "italic" },
-        functions = { "bold" },
-        keywords = { "italic" },
-        strings = {},
-        variables = {},
-        numbers = { "bold" },
-        booleans = { "bold", "italic" },
-        properties = {},
-        types = { "italic" },
-        operators = {},
-      },
+      styles = {},
     },
   },
   {
