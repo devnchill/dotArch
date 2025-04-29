@@ -1,0 +1,12 @@
+disable_ligatures never
+font_family DankMono Nerd Font Mono
+font_size 12
+bold_font DankMonoNerdFontMono-Bold
+italic_font DankMonoNerdFontMono-Italic
+bold_italic_font auto
+modify_font cell_height 120%
+confirm_os_window_close 0
+
+linux_display_server wayland
+
+enable_audio_bell no

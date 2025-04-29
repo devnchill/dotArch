@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  #
 # Wallpaper Effects using ImageMagick (SUPER SHIFT W)
 
 # Variables

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # for rainbow borders animation
 
 function random_hex() {

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # Script for Random Wallpaper ( CTRL ALT W)
 
 wallDIR="$HOME/Pictures/wallpapers"

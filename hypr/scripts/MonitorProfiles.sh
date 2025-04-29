@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # For applying Pre-configured Monitor Profiles
 
 # Check if rofi is already running

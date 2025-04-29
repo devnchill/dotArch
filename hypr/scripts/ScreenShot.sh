@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # Screenshots scripts
 
 # variables

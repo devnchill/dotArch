@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # searchable enabled keybinds using rofi
 
 # kill yad to not interfere with this binds

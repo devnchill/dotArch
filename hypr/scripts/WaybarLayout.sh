@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # Script for waybar layout or configs
 
 IFS=$'\n\t'

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # For manually starting xdg-desktop-portal-hyprland
 
 sleep 1

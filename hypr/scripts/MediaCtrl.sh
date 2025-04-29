@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # Playerctl
 
 music_icon="$HOME/.config/swaync/icons/music.png"

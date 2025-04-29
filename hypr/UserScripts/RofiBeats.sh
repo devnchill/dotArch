@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# /* ---- 💫 https://  💫 ---- */  ##
 # For Rofi Beats to play online Music or Locally saved media files
 
 # Variables
