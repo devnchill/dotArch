@@ -69,7 +69,7 @@ window#waybar.empty #window {
 }
 
 #custom-swaync {
-  color: @yellow;
+  color: @purple;
 }
 
 #workspaces button {
@@ -80,7 +80,7 @@ window#waybar.empty #window {
 
 #taskbar button.active,
 #workspaces button.active {
-  background-color: @yellow;
+  background-color: @purple;
   color: @black;
   animation: gradient_f 20s ease-in infinite;
 }
@@ -110,13 +110,13 @@ window#waybar.empty #window {
 #cpu {
   border-radius: 5px 0px 0px 5px;
   padding: 0px 5px;
-  background-color: @yellow;
+  background-color: @purple;
   color: @black;
 }
 
 #memory {
   padding: 0px 5px;
-  background-color: @yellow;
+  background-color: @purple;
   color: @black;
 }
 
