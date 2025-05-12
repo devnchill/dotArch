@@ -246,7 +246,7 @@ window#waybar.empty #window {
 
 #pulseaudio-slider highlight,
 #backlight-slider highlight {
-  min-height: 10px;
+  min-height: 50px;
   border-radius: 5px;
   background-color: #e57373;
 }
