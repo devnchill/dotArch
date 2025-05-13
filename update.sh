@@ -24,6 +24,7 @@ directories=(
   "$HOME/.config/cava"
   "$HOME/.config/waybar"
   "$HOME/.tmux"
+  "$HOME/.loca/bin"
 )
 
 # Loop over directories and sync them
