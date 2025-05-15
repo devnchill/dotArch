@@ -6,35 +6,35 @@ return {
       -- NOTE: you do not need to call setup if you don't want to.
       require("vague").setup({
         style = {
-          boolean = "bold",
+          boolean = "none",
           number = "none",
           float = "none",
           error = "bold",
           comments = "italic",
           conditionals = "none",
           functions = "none",
-          headings = "bold",
+          headings = "none",
           operators = "none",
           strings = "italic",
           variables = "none",
 
           -- keywords
-          keywords = "none",
+          keywords = "italic",
           keyword_return = "italic",
           keywords_loop = "none",
           keywords_label = "none",
           keywords_exception = "none",
 
           -- builtin
-          builtin_constants = "bold",
-          builtin_functions = "none",
-          builtin_types = "bold",
+          builtin_constants = "none",
+          builtin_functions = "bold",
+          builtin_types = "none",
           builtin_variables = "none",
         },
         plugins = {
           cmp = {
-            match = "bold",
-            match_fuzzy = "bold",
+            match = "none",
+            match_fuzzy = "none",
           },
           dashboard = {
             footer = "italic",
@@ -43,11 +43,11 @@ return {
             diagnostic_error = "bold",
             diagnostic_hint = "none",
             diagnostic_info = "italic",
-            diagnostic_warn = "bold",
+            diagnostic_warn = "none",
           },
           neotest = {
             focused = "bold",
-            adapter_name = "bold",
+            adapter_name = "none",
           },
           telescope = {
             match = "bold",
