@@ -26,3 +26,7 @@ end)
 keymap({ "n", "t" }, "<A-s>", function()
   term:new({ name = "webpackLive" }):run("npm run dev")
 end)
+-- Run code for the current file
+keymap("n", "<leader>rr", function()
+  require("utils.run-code").run_code()
+end, opt("Run current file"))

@@ -191,6 +191,7 @@
 		"class<microsoft-edge>": " ",
 		"class<Chromium|Thorium|[Cc]hrome>": " ",
 		"class<brave-browser>": "🦁 ",
+		"class<[Zz]en.*": " ",
 		"class<tor browser>": " ",
 		"class<firefox-developer-edition>": "🦊 ",
 
