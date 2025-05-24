@@ -1,36 +1,33 @@
-/* --- Modified Everforest for True Black Background --- */
-
-@define-color black       #000000;
-@define-color white       #FFFFFF;
-@define-color bg_dim      #000000;
-@define-color fg          #CFCFCF;
-@define-color red         #E57373;
-@define-color orange      #F78C6C;
-@define-color yellow      #FFD54F;
-@define-color green       #81C784;
-@define-color aqua        #4DD0E1;
-@define-color blue        #64B5F6;
-@define-color purple      #BA68C8;
-@define-color grey1       #555555;
-@define-color grey2       #666666;
+@define-color black #000000;
+@define-color white #ffffff;
+@define-color bg_dim #000000;
+@define-color fg #cfcfcf;
+@define-color red #e57373;
+@define-color orange #f78c6c;
+@define-color green #81c784;
+@define-color aqua #4dd0e1;
+@define-color blue #64b5f6;
+@define-color purple #ba68c8;
+@define-color grey1 #555555;
+@define-color grey2 #666666;
+@define-color bg_green #5e8f68;
+@define-color bg0 #1e1e1e;
 
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
+  font-size: 0.7rem;
   min-height: 0;
-  font-size: 97%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-  border: 1px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
   border-radius: 0px;
-  margin: 0px 1px;
-  padding: 0;
 }
 
 window#waybar {
   border: none;
   background-color: @black;
   color: @fg;
-  transition-property: background-color;
   transition-duration: 0.5s;
 }
 
@@ -41,30 +38,10 @@ window#waybar.hidden {
 #window {
   padding: 0px 10px;
   margin: 0px 10px;
-  border-radius: 5px;
-  background-color: @bg1;
-}
-
-window#waybar.empty,
-window#waybar.empty #window {
-  background: none;
-}
-
-.modules-left button:first-child {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-left: 5px;
-}
-
-.modules-left button:last-child {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  margin-right: 5px;
 }
 
 #custom-menu,
 #custom-arch {
-  background-color: @black;
   color: @red;
 }
 
@@ -87,12 +64,7 @@ window#waybar.empty #window {
 
 #taskbar button:hover,
 #workspaces button:hover {
-  background-color: @purple;
-  color: @black;
-}
-
-#workspaces button.focused {
-  background-color: @green;
+  background-color: @blue;
   color: @black;
 }
 
@@ -108,7 +80,6 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  border-radius: 5px 0px 0px 5px;
   padding: 0px 5px;
   background-color: @purple;
   color: @black;
@@ -130,23 +101,13 @@ window#waybar.empty #window {
 }
 
 #disk {
-  border-radius: 0px 5px 5px 0px;
   padding: 0px 5px;
   margin-right: 5px;
   background-color: @green;
   color: @black;
 }
 
-#battery.bat2 {
-  border-radius: 0px 5px 5px 0px;
-}
-
-.modules-left :last-child {
-  border-radius: 0px 5px 5px 0px;
-}
-
 #battery {
-  border-radius: 5px 0px 0px 5px;
   padding: 0px 5px;
   background-color: @aqua;
   color: @black;
@@ -175,7 +136,6 @@ window#waybar.empty #window {
 }
 
 #backlight {
-  border-radius: 5px 0px 0px 5px;
   padding: 0px 5px;
   margin-left: 5px;
   background-color: @orange;
@@ -185,7 +145,6 @@ window#waybar.empty #window {
 #network,
 #pulseaudio {
   padding: 0px 5px;
-  border-radius: 0px 5px 5px 0px;
   background-color: @blue;
   color: @black;
 }
@@ -197,7 +156,6 @@ window#waybar.empty #window {
 
 #tray {
   padding: 0px 5px;
-  border-radius: 5px;
   margin-left: 5px;
   color: @fg;
   background-color: @bg0;
@@ -220,20 +178,9 @@ window#waybar.empty #window {
 
 #clock {
   padding: 0px 5px;
-  border-radius: 5px;
   margin: 0px 5px;
   color: @black;
   background-color: @aqua;
-}
-
-#pulseaudio-slider slider,
-#backlight-slider slider {
-  min-width: 0px;
-  min-height: 0px;
-  opacity: 0;
-  background-image: none;
-  border: none;
-  box-shadow: none;
 }
 
 #pulseaudio-slider trough,
@@ -303,6 +250,5 @@ window#waybar.empty #window {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 0 5px;
 }

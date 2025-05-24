@@ -23,8 +23,8 @@ function M.run_code()
       debug = "gcc -g % -o $fileBase %extra && $fileBase",
     },
     cpp = {
-      default = "g++ % -o $fileBase %extra && $fileBase",
       debug = "g++ -g % -o $fileBase %extra",
+      default = "g++ % -o $fileBase %extra && $fileBase",
       competitive = "g++ -std=c++17 -Wall -DAL -O2 % -o $fileBase %extra && $fileBase",
     },
     cs = { default = "dotnet run" },
