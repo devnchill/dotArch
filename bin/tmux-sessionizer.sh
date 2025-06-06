@@ -2,14 +2,14 @@
 
 # Custom project roots
 SEARCH_DIRS=(
-  "$HOME/Code/"
+  "$HOME/dev/"
 )
 
 # Select a directory via fzf
 if [[ $# -eq 1 ]]; then
   selected=$1
 else
-  selected=$(find "${SEARCH_DIRS[@]}" -mindepth 1 -maxdepth 3 -type d | fzf)
+  selected=$(find "${SEARCH_DIRS[@]}" -mindepth 1 -type d | fzf)
 fi
 
 # Exit if no selection
