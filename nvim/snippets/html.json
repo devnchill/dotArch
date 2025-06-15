@@ -1,0 +1,9 @@
+{
+  "Insert Lorem Ipsum": {
+    "prefix": "lorem",
+    "description": "Inserts a lorem ipsum paragraph",
+    "body": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ]
+  }
+}

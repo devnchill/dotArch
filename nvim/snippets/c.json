@@ -1,0 +1,14 @@
+{
+  "Custom Main Method": {
+    "prefix": "main",
+    "description": "Insert Custom Main Method with no argc/argv",
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "int main() {",
+      "    ${1}",
+      "    return 0;",
+      "}"
+    ]
+  }
+}

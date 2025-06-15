@@ -1,7 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-vim.api.nvim_set_keymap("n", "<leader>kl", ":silent !toggleLiveServer.sh<CR>", { noremap = true, silent = true })
 local term = require("config.terminal")
 local opts = { silent = true }
 local keymap = vim.keymap.set
@@ -26,7 +25,6 @@ end)
 keymap({ "n", "t" }, "<A-s>", function()
   term:new({ name = "webpackLive" }):run("npm run dev")
 end)
--- Run code for the current file
-keymap("n", "<leader>rr", function()
-  require("utils.run-code").run_code()
-end, opt("Run current file"))
+vim.keymap.set("n", "<F5>", function()
+  require("util.run").Run()
+end, { desc = "Build and Run" })

@@ -6,10 +6,11 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "*",
+vim.api.nvim_create_autocmd("QuickFixCmdPost", {
+  pattern = { "make" },
   callback = function()
-    vim.opt.formatoptions:remove({ "c", "r", "o" })
+    if vim.fn.getqflist({ size = 0 }).size > 0 then
+      vim.cmd("botright copen 12")
+    end
   end,
 })
