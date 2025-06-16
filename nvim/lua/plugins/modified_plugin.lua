@@ -39,43 +39,4 @@ return {
       end
     end,
   },
-  -- {
-  --   "akinsho/bufferline.nvim",
-  --   dependencies = {
-  --     "nvim-tree/nvim-web-devicons",
-  --   },
-  --   config = function()
-  --     require("bufferline").setup({
-  --       highlights = {
-  --         fill = {
-  --           bg = "#000000", -- proper hex format
-  --         },
-  --         background = {
-  --           bg = "#000000", -- proper hex format
-  --         },
-  --         tab = {
-  --           bg = "#000000", -- proper hex format
-  --         },
-  --         tab_selected = {
-  --           bg = "#000000",
-  --         },
-  --         tab_separator_selected = {
-  --           bg = "#000000",
-  --         },
-  --         tab_close = {
-  --           bg = "#000000",
-  --         },
-  --         close_button = {
-  --           bg = "#000000",
-  --         },
-  --         close_button_visible = {
-  --           bg = "#000000",
-  --         },
-  --         close_button_selected = {
-  --           bg = "#000000",
-  --         },
-  --       },
-  --     })
-  --   end,
-  -- },
 }
