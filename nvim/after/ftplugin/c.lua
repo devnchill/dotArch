@@ -1,3 +1,3 @@
 if vim.bo.filetype == "c" then
-  vim.opt_local.makeprg = "gcc % -o %:r"
+  vim.opt_local.makeprg = "gcc -g % "
 end
