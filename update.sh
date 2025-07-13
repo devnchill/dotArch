@@ -13,7 +13,7 @@ check_exists() {
 sync_directory() {
   local src=$1
   local dest=$2
-  check_exists "$src" && rsync -av --exclude='.git' --itemize-changes "$src/" "$dest/$(basename "$src")/"
+  check_exists "$src" && rsync -av --delete --exclude='.git' --itemize-changes "$src/" "$dest/$(basename "$src")/"
 }
 
 # Special function to sync only .sh scripts from .local/bin
@@ -21,7 +21,7 @@ sync_shell_scripts_from_bin() {
   local src="$HOME/.local/bin"
   local dest="./bin"
   mkdir -p "$dest"
-  find "$src" -maxdepth 1 -type f -name "*.sh" -exec rsync -av --itemize-changes {} "$dest/" \;
+  rsync -av --delete --include="*/" --include="*.sh" --exclude="*" --itemize-changes "$src/" "$dest/"
 }
 
 # Directories to sync (excluding .local/bin for now)

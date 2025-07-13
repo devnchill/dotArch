@@ -1,1 +1,1 @@
-vim.opt_local.makeprg = "ts-node %"
+vim.opt_local.makeprg = "tsx %"
