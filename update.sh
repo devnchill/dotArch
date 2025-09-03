@@ -32,6 +32,7 @@ directories=(
   "$HOME/.config/cava"
   "$HOME/.config/waybar"
   "$HOME/.tmux"
+  "$HOME/Pictures/wallpapers/"
 )
 
 # Loop over directories and sync them
