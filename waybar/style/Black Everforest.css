@@ -16,12 +16,14 @@
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 9px;
   min-height: 0;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   border-right: 2px solid transparent;
   border-left: 2px solid transparent;
   border-radius: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 window#waybar {
@@ -29,6 +31,8 @@ window#waybar {
   background-color: @black;
   color: @fg;
   transition-duration: 0.5s;
+  padding: 0;
+  margin: 0;
 }
 
 window#waybar.hidden {

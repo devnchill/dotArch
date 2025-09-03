@@ -1,4 +1,4 @@
-/* ---- 💫 https:// ooLit 💫 ---- */
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /*  ml4w-modern */
 
 @import '../../.config/waybar/wallust/colors-waybar.css';
@@ -168,6 +168,7 @@ window#waybar.empty #window {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,

@@ -1,4 +1,4 @@
-/* ---- 💫 https:// ooLit 💫 ---- */
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /* Translucent */
 
 @define-color critical #ff0000; /* critical color */
@@ -137,6 +137,7 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,

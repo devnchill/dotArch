@@ -17,8 +17,6 @@ vim.api.nvim_create_user_command("Run", function()
     output = "node " .. vim.fn.expand("%")
   elseif ft == "typescript" then
     output = "ts-node " .. vim.fn.expand("%")
-  elseif ft == "python" then
-    output = "python3 " .. vim.fn.expand("%")
   else
     print("Unsupported filetype: " .. ft)
     return

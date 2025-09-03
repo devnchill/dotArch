@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# /* ---- 💫 https://  💫 ---- */  #
+# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
 # original code https://gist.github.com/Surendrajat/ff3876fd2166dd86fb71180f4e9342d7
 # weather using python
 
@@ -88,7 +88,7 @@ temp_max = (
 temp_min_max = f"  {temp_min}\t\t  {temp_max}"
 
 # wind speed
-wind_speed = html_data("span[data-testid='Wind']").text().split("\n")[0]
+wind_speed = str(html_data("span[data-testid='Wind'] > span").text())
 wind_text = f"  {wind_speed}"
 
 # humidity

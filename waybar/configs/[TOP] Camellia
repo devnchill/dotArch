@@ -1,4 +1,4 @@
-//* ----------- 💫 https:// ooLit 💫 -------- */
+//* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
 //* ............................................*/
 //* .............CAMELLIA.......................*/
 //* ............................................*/
@@ -41,6 +41,7 @@
 	"backlight/slider",
 	"custom/speaker",
 	"pulseaudio/slider",
+	"power-profiles-daemon",
 	"battery",
 	"clock#3", 
 	"network"],

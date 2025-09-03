@@ -1,4 +1,4 @@
-/* ---- 💫 https:// ooLit 💫 ---- */
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 
 // ### DUAL TOP and BOTTOM ### //
 
@@ -23,7 +23,8 @@
 "margin-right": 8,
 
 "modules-left": [
-	"cpu", 
+	"cpu",
+	"power-profiles-daemon", 
 	"temperature", 
 	"memory",
 	"disk", 

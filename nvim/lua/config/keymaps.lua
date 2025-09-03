@@ -34,7 +34,7 @@ keymap({ "n", "t" }, "<C-p>", function()
   term:new({ execn = "python", name = "PythonREPL" }):toggle()
 end, opt("Toggle Python REPL"))
 
-keymap({ "n", "i" }, "<C-\\>", function()
+keymap({ "n", "i" }, "<A-\\>", function()
   vim.cmd("w")
   vim.cmd("Run")
 end, opt("Save and Run"))

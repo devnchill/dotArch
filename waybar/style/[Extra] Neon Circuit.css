@@ -1,4 +1,4 @@
-/* ----------- 💫 https:// ooLit 💫 -------- */
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
 /* --- Extra - Neon Circuit - waybar style ---*/
 
 @define-color bar-bg rgba(0, 0, 0, 0);
@@ -125,6 +125,7 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,

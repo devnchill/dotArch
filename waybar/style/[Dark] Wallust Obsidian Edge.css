@@ -1,4 +1,4 @@
-/* ---- 💫 https:// ooLit 💫 ---- */
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 /* Dark - Obsidian Edge */
 
 @import '../../.config/waybar/wallust/colors-waybar.css';
@@ -130,6 +130,7 @@ tooltip label {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
