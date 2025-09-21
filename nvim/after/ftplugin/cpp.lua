@@ -1,25 +1,24 @@
--- buffer-local compile command
-vim.opt_local.makeprg = "g++ -g -std=c++17 -o target %"
+vim.api.nvim_buf_set_keymap(0, "n", "<F5>", "", {
+  noremap = true,
+  silent = true,
+  callback = function()
+    -- save current file
+    vim.cmd("w")
 
--- function to compile and run
-local function compile_and_run()
-  -- run :make silently
-  vim.cmd("silent make")
+    -- set makeprg for this buffer
+    vim.opt_local.makeprg = "g++ -std=c++17 -o target %"
 
-  -- check if there are errors in quickfix
-  local qflist = vim.fn.getqflist()
-  if not vim.tbl_isempty(qflist) then
-    -- open quickfix if there are errors
-    vim.cmd("copen")
-  else
-    -- no errors → run binary in vertical terminal split
-    vim.cmd("vsplit")
-    vim.cmd("terminal ./target")
-  end
-end
+    -- run :make silently
+    vim.cmd("silent make")
 
--- autocmd to trigger on saving C++ files
-vim.api.nvim_create_autocmd("BufWritePost", {
-  pattern = "*.cpp",
-  callback = compile_and_run,
+    -- check quickfix list for errors
+    local qflist = vim.fn.getqflist()
+    if not vim.tbl_isempty(qflist) then
+      -- open quickfix if compilation failed
+      vim.cmd("copen")
+    else
+      -- compilation succeeded, run program in split terminal
+      vim.cmd("split | terminal ./target")
+    end
+  end,
 })
