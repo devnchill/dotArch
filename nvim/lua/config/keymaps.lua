@@ -34,11 +34,6 @@ keymap({ "n", "t" }, "<C-p>", function()
   term:new({ execn = "python", name = "PythonREPL" }):toggle()
 end, opt("Toggle Python REPL"))
 
-keymap({ "n", "i" }, "<A-\\>", function()
-  vim.cmd("w")
-  vim.cmd("Run")
-end, opt("Save and Run"))
-
 keymap({ "n", "t" }, "<A-g>", function()
   term:new({ execn = "psql", name = "PostgresREPL" }):toggle()
 end, opt("Toggle PSQL REPL"))
